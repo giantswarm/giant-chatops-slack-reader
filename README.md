@@ -9,7 +9,7 @@ to
 - pass these details on for use in Argo Workflows
 - post some status message back into the channel
 
-Required environmt variables:
+Required environment variables:
 
 - `SLACK_TOKEN`: The Slack auth token
 - `SLACK_CHANNEL_ID`: ID of the Slack channel this program should use
