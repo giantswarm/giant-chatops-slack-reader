@@ -5,7 +5,6 @@ COPY . /opt/project
 WORKDIR /opt/project
 
 RUN go build .
-RUN ls -la
 
 FROM quay.io/giantswarm/alpine:3.13.5
 
