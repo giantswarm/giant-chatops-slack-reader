@@ -12,3 +12,18 @@ workflows:
             # Trigger job also on git tag.
             tags:
               only: /^v.*/
+      - architect/push-to-docker:
+          name: "push-to-quay"
+          context: "architect"
+          image: "quay.io/giantswarm/giant-chatops-slack-reader"
+          username_envar: "QUAY_USERNAME"
+          password_envar: "QUAY_PASSWORD"
+          build-context: "."
+          dockerfile: "./Dockerfile"
+          requires:
+            # Make sure binary is built.
+            - go-test
+          filters:
+            # Trigger job also on git tag.
+            tags:
+              only: /^v.*/
