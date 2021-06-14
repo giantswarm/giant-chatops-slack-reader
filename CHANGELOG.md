@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.7] - 2021-06-14
+
 ### Added
 
 - First implementation
 
-[Unreleased]: https://github.com/giantswarm/REPOSITORY_NAME/tree/master
+[Unreleased]: https://github.com/giantswarm/giant-chatops-slack-reader/compare/v0.0.7...HEAD
+[0.0.7]: https://github.com/giantswarm/giant-chatops-slack-reader/releases/tag/v0.0.7
