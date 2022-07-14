@@ -1,9 +1,15 @@
 # DO NOT EDIT. Generated with:
 #
-#    devctl@4.5.1
+#    devctl@5.8.0
 #
 version: 2
 updates:
+  - package-ecosystem: docker
+    directory: "/"
+    schedule:
+      interval: weekly
+      time: "04:00"
+    open-pull-requests-limit: 10
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
@@ -12,6 +18,7 @@ updates:
     open-pull-requests-limit: 10
     ignore:
       - dependency-name: zricethezav/gitleaks-action
+      - dependency-name: actions/setup-go
   - package-ecosystem: gomod
     directory: "/"
     schedule:
