@@ -2,7 +2,4 @@ module github.com/giantswarm/giant-chatops-slack-reader
 
 go 1.16
 
-require (
-	github.com/pkg/errors v0.9.1 // indirect
-	github.com/slack-go/slack v0.9.1
-)
+require github.com/slack-go/slack v0.11.1
